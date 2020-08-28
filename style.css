@@ -1,0 +1,138 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* Eric Mayers's Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Eric Mayer's reset Ends here */
+
+html {
+    font-size: 10px;
+    color: #4e4d4d;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background: khaki;
+}
+main {
+    max-width: 50rem;
+    margin: 2rem auto;
+    background: linear-gradient(30deg, #571074, #5aeb79);
+    padding: 3rem 1.7rem 7rem 1.7rem;
+    border-radius: 4rem;
+    box-shadow: 0 2px 2px lightgray;
+}
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    padding-bottom: 3rem;
+}
+section {
+    background: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 1.7rem;
+    padding: 0 1.7rem;
+    border-radius: 1rem;
+    box-shadow: inset 0 2px 2px lightgray;
+}
+
+section > div {
+    padding: 1.7rem 0;
+}
+.bill {
+    display: flex;
+}
+.bill label {
+    flex: 1;
+    align-self: center;
+}
+.bill input {
+    flex: 3;
+}
+input[type="number"] {
+    font-family: inherit;
+    background: #f4f4f5;
+    font-size: 1.7rem;
+    border:  1px solid lightgray;
+    border-radius: 0.8rem 0 0.8rem 0.8rem;
+    box-shadow: inset 0 2px 2px lightgray;
+}
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+.total {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.range {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #eee;
+    margin: 1.2rem;
+    border-radius: 0.3rem;
+    outline-color: #8fe9cf;
+}
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background: #3dc0c0;
+    cursor: pointer;
+}
+.range::-moz-range-thumb {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background: #3dc0c0;
+    cursor: pointer;
+    border: none;
+}
+.range::-moz-focus-outer {
+    border: 0;
+}
